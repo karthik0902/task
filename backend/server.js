@@ -15,8 +15,8 @@ app.use(express.json());
 const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
-app.use('/api/users', userRoutes); 
-app.use('/api/tasks', taskRoutes); 
+app.use('/users', userRoutes); 
+app.use('/tasks', taskRoutes); 
 
 
 app.get('/', (req, res) => {
